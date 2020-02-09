@@ -1,0 +1,18 @@
+<!--pages/wxml/wxml.wxml-->
+<text>pages/wxml/wxml.wxml</text>
+<!-- //双标签 -->
+<view></view>
+<!-- //单标签,但是必须用/结尾 -->
+<image/>
+<input/>
+<!-- mustche语法 -->
+<view>{{message}}</view>
+<view>{{firstname+" "+lastname}}</view>
+<!-- 因为js层已经绑定了age=20； -->
+<view>{{age>=18?"成年人":"未成年人"}}</view>
+<!-- 会随时间变化的定时器 -->
+<view>{{nowtime}}</view>
+<!--  -->
+<button size="mini"bindtap="handleswitchcolor">切换颜色</button>
+<!-- box外面套的是单引号，所以里面要套双引号 -->
+<view class='box {{isactive?"active":""}}'>哈哈哈哈</view>

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/wxml/wxml",
     "pages/index/index"
   ],
   "sitemapLocation": "sitemap33.json"
