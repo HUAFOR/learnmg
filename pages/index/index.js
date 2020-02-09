@@ -5,14 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    message:'哈哈哈',
+    list:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log("onload");
+    wx.request({
+      url: 'http://123.207.32.32:8000/recommend',
+      //箭头函数this是一层层向上找
+      success: (res) => {
+        console.log(res)
+        const data = res.data.data.list;
+        this.setData({
+          list: data
+        })
+      }
+    })
   },
 
   /**
